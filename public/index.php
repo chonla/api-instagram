@@ -11,12 +11,10 @@ $app = AppFactory::create();
 $app->get('/', function (Request $request, Response $response, $args) {
     $scraper = new TagScraper();
 
-    $payload = json_encode($scraper->Scrape('snail'));
+    $payload = json_encode($scraper->scrape('snail'));
 
     $response->getBody()->write($payload);
-    return $response
-              ->withHeader('Content-Type', 'application/json');
-                  return $response;
+    return $response->withHeader('Content-Type', 'application/json');
 });
 
 $app->run();
