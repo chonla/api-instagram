@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1389a791f3ec168115c43619a72c2333",
+    "content-hash": "4a1fe28b5e086e25d3421ffe69bf77e6",
     "packages": [
         {
             "name": "chonla/instagram-scraper",
-            "version": "v0.1.8",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chonla/instagram-scraper.git",
-                "reference": "9a83390f72940000e8ce0ccc694fd7dc7995358c"
+                "reference": "9dcc9fd9479560318f3b4384b4a53c5d415818cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chonla/instagram-scraper/zipball/9a83390f72940000e8ce0ccc694fd7dc7995358c",
-                "reference": "9a83390f72940000e8ce0ccc694fd7dc7995358c",
+                "url": "https://api.github.com/repos/chonla/instagram-scraper/zipball/9dcc9fd9479560318f3b4384b4a53c5d415818cd",
+                "reference": "9dcc9fd9479560318f3b4384b4a53c5d415818cd",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "InstagramScraper\\": "src/"
+                    "Chonla\\InstagramScraper\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -43,7 +43,7 @@
                 }
             ],
             "description": "Web-scraper for getting public media by tag from Instagram.",
-            "time": "2019-12-23T09:18:14+00:00"
+            "time": "2019-12-25T09:49:58+00:00"
         },
         {
             "name": "fig/http-message-util",
