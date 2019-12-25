@@ -8,10 +8,10 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
-$app->get('/', function (Request $request, Response $response, $args) {
+$app->get('/tag/{name}', function (Request $request, Response $response, $args) {
     $scraper = new TagScraper();
 
-    $payload = json_encode($scraper->scrape('snail')->images()->toArray());
+    $payload = json_encode($scraper->scrape($args['name'])->images()->toArray());
 
     $response->getBody()->write($payload, true);
     return $response->withHeader('Content-Type', 'application/json');
